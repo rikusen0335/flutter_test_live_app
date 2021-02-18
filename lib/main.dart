@@ -9,8 +9,10 @@ import 'dart:io';
 
 import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
-import 'package:test_spoon/camera.dart';
 import 'package:video_player/video_player.dart';
+
+import 'camera.dart';
+import 'jitsi.dart';
 
 class CameraExampleHome extends StatefulWidget {
   @override
@@ -904,5 +906,5 @@ Future<void> main() async {
   } on CameraException catch (e) {
     logError(e.code, e.description);
   }
-  runApp(CameraApp());
+  runApp(MyApp());
 }
