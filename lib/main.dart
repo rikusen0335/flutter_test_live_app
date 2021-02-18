@@ -9,6 +9,7 @@ import 'dart:io';
 
 import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
+import 'package:test_spoon/camera.dart';
 import 'package:video_player/video_player.dart';
 
 class CameraExampleHome extends StatefulWidget {
@@ -883,7 +884,7 @@ class Home extends StatelessWidget {
             Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => CameraExampleHome(),
+                  builder: (context) => Camera(),
                 ));
           },
         ),
